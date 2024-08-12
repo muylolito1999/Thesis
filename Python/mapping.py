@@ -186,6 +186,46 @@ fathers_occupation_mapping = {
     194: 'Meal preparation assistants',
     195: 'Street vendors (except food) and street service providers'
 }
+course_mapping = {
+    33: 'Biofuel Production Technologies',
+    171: 'Animation and Multimedia Design',
+    8014: 'Social Service (evening attendance)',
+    9003: 'Agronomy',
+    9070: 'Communication Design',
+    9085: 'Veterinary Nursing',
+    9119: 'Informatics Engineering',
+    9130: 'Equinculture',
+    9147: 'Management',
+    9238: 'Social Service',
+    9254: 'Tourism',
+    9500: 'Nursing',
+    9556: 'Oral Hygiene',
+    9670: 'Advertising and Marketing Management',
+    9773: 'Journalism and Communication',
+    9853: 'Basic Education',
+    9991: 'Management (evening attendance)'
+}
+previous_qualification_mapping = {
+    1: 'Secondary education',
+    2: 'Higher education - bachelor\'s degree',
+    3: 'Higher education - degree',
+    4: 'Higher education - master\'s',
+    5: 'Higher education - doctorate',
+    6: 'Frequency of higher education',
+    9: '12th year of schooling - not completed',
+    10: '11th year of schooling - not completed',
+    12: 'Other - 11th year of schooling',
+    14: '10th year of schooling',
+    15: '10th year of schooling - not completed',
+    19: 'Basic education 3rd cycle (9th/10th/11th year) or equivalent',
+    38: 'Basic education 2nd cycle (6th/7th/8th year) or equivalent',
+    39: 'Technological specialization course',
+    40: 'Higher education - degree (1st cycle)',
+    42: 'Professional higher technical course',
+    43: 'Higher education - master\'s (2nd cycle)'
+}
+
+
 # Funzione per mappare i valori solo se sono esattamente numeri interi e presenti nel dizionario
 def map_values(value, mapping):
     try:
@@ -205,6 +245,10 @@ df["Father's qualification"] = df["Father's qualification"].apply(lambda x: map_
 df["Mother's occupation"] = df["Mother's occupation"].apply(lambda x: map_values(x, mothers_occupation_mapping))
 df["Father's occupation"] = df["Father's occupation"].apply(lambda x: map_values(x, fathers_occupation_mapping))
 
+# Applica la mappatura alla colonna "Course"
+df['Course'] = df['Course'].apply(lambda x: map_values(x, course_mapping))
+# Applica la mappatura alla colonna "Previous Qualification"
+df['Previous qualification'] = df['Previous qualification'].apply(lambda x: map_values(x, previous_qualification_mapping))
 # Salva il DataFrame modificato in un nuovo file CSV
 output_file_path = '/home/lollo/Thesis/Python/data/data_mapped.csv'
 df.to_csv(output_file_path, index=False, sep=';')
