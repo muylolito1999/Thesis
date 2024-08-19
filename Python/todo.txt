@@ -1,0 +1,10 @@
+USIAMO solo dataset completo e mappato
+usiamo XGboost e applichiamo lime, a 10 feature e 5 persone
+usiamo Decision Tree e applichiamo lime, a 10 feature e 5 persone
+salviamo 10 figure che ci serviranno per la tesi
+Per l'albero decsionale mettere una figura capire come sviscerare l'albero oppure una sequenza di stampe ( da capire, stampa foglia?)
+
+Su XGboost fare lime e mettere media del peso delle diverse feature per capire quali sono le più importanti
+ |utente test|  | peso "nome feature 1" |  | peso "nome feature 2"| 
+calcolare la dispersione con un boxplot delle feature, calcolare media con deviazone standard di ogni colonna di feature e fare un boxplot
+e mediana con il range interquartile (boxplot)
