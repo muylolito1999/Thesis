@@ -1,6 +1,6 @@
 USIAMO solo dataset completo e mappato sempre 36 feature OK
-usiamo XGboost e applichiamo lime, a 36 feature e 5 persone  (aggiornare immagini)
-usiamo Decision Tree e applichiamo lime, a 36 feature e 5 persone  (aggiornare immagini)
+usiamo XGboost e applichiamo lime, a 36 feature e 5 persone  (aggiornare immagini) OK
+usiamo Decision Tree e applichiamo lime, a 36 feature e 5 persone  (aggiornare immagini), ABBIAMO UNA PREDIZIONE ERRATA
 salviamo 10 figure che ci serviranno per la tesi  (aggiornare immagini)
 Per l'albero decsionale mettere una figura capire come sviscerare l'albero oppure una sequenza di stampe ( da capire, stampa foglia?) (aggiornare pdf)
 Controllare che i 5 delle immagini siano corretti 
