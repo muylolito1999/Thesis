@@ -11,3 +11,10 @@ nel csv 800 user mettere il valore assoluto dei pesi il nostro obiettivo è non 
 fare prima il csv poi il boxplot
 
 
+IDENTIFICARE CHI SONO NEL CSV con una stampa dei pesi delle explantion, capire se c'è correlazione, controllare anche con le immagini di XGboost
+se si calano bene e quanto nell'albero decisionale, salvare nella figura PREDICTION e CORRECT così da avere riferimento
+
+analisi globale delle feature albero vs analisi locale delle singole feaure di lime sull'albero
+analisi "locale" delle singole feature con i 10 grafici best_dt vs best_xgb
+
+con lo stesso codice dei csv fare la stessa cosa divisa per target, fare i boxplot poi delle diverse classi [Dropout, Graduated, Enrolled] solo logaritmico
